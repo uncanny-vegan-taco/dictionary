@@ -24,12 +24,11 @@ export default function Search() {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          id="word"
           type="search"
           placeholder="Type a word here..."
           onChange={updateWord}
         />
-        <input id="button" type="submit" className="btn btn-primary" />
+        <input type="submit" className="btn btn-primary" />
       </form>
       <Results results={results} />
     </div>

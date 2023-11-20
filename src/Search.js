@@ -3,9 +3,13 @@ import axios from "axios";
 
 export default function Search() {
   let [word, setWord] = useState(null);
+  function showDefinition(response) {
+    console.log(response.data);
+  }
   function handleSubmit(event) {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     event.preventDefault();
-    console.log(word);
+    axios.get(apiUrl).then(showDefinition);
   }
   function updateWord(event) {
     setWord(event.target.value);

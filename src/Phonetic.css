@@ -6,13 +6,15 @@ a {
   padding: 8px 12px;
   font-size: 12px;
   transition: 200ms ease-in-out;
-  margin-left: 15px;
+  margin: 10px;
 }
 a:hover {
   color: #283739;
   background-color: #a2c11c;
 }
-
+.Phonetics {
+  margin: 5px;
+}
 .first-color {
   background: #283739;
 }

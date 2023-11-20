@@ -12,12 +12,15 @@ export default function Search() {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-
-    axios.get(apiUrl).then(showDefinition);
+    Search();
   }
   function updateWord(event) {
     setWord(event.target.value);
+  }
+
+  function Search() {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    axios.get(apiUrl).then(showDefinition);
   }
 
   return (
@@ -28,7 +31,6 @@ export default function Search() {
           placeholder="Type a word here..."
           onChange={updateWord}
         />
-        <input type="submit" className="btn btn-primary" />
       </form>
       <Results results={results} />
     </div>

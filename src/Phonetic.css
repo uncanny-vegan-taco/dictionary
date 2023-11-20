@@ -1,0 +1,30 @@
+a {
+  color: #a2c11c;
+  text-decoration: none;
+  background-color: #283739;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
+  transition: 200ms ease-in-out;
+  margin-left: 15px;
+}
+a:hover {
+  color: #283739;
+  background-color: #a2c11c;
+}
+
+.first-color {
+  background: #283739;
+}
+
+.second-color {
+  background: #2c5d63;
+}
+
+.third-color {
+  background: #a2c11c;
+}
+
+.fourth-color {
+  background: #e0e0e0;
+}

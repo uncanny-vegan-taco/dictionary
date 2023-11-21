@@ -9,13 +9,14 @@ export default function Search(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
+
   function showDefinition(response) {
     console.log(response.data);
     setResults(response.data[0]);
   }
   function handleSubmit(event) {
     event.preventDefault();
-    Search();
+    getInfo();
   }
   function updateWord(event) {
     setWord(event.target.value);
@@ -26,10 +27,10 @@ export default function Search(props) {
 
   function load() {
     setLoaded(true);
-    Search();
+    getInfo();
   }
 
-  function Search() {
+  function getInfo() {
     let imageApiKey = "ab845e08702fbc3c99tc4fo5b8bf92c3";
     let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${word}&key=${imageApiKey}`;
     let wordapiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;

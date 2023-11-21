@@ -7,9 +7,11 @@ export default function Images(props) {
       <div className="Images">
         {props.photos.map(function (photo, index) {
           return (
-            <a href={photo.src.original} target="_blank" rel="noreferrer">
-              <img key={index} src={photo.src.portrait} />
-            </a>
+            <div key={index}>
+              <a href={photo.src.original} target="_blank" rel="noreferrer">
+                <img src={photo.src.portrait} />
+              </a>
+            </div>
           );
         })}
       </div>

@@ -17,7 +17,6 @@ export default function Meaning(props) {
           </div>
         );
       })}
-      <p>{props.meaning.definitions[0].definition}</p>
     </div>
   );
 }

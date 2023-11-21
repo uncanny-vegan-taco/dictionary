@@ -9,7 +9,7 @@ export default function Photos(props) {
           return (
             <div key={index}>
               <a href={photo.src.original} target="_blank" rel="noreferrer">
-                <img src={photo.src.portrait} alt="Photo" />
+                <img src={photo.src.portrait} alt="Visuals" />
               </a>
             </div>
           );

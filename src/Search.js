@@ -52,6 +52,8 @@ export default function Search(props) {
         <Images photos={photos} />
       </div>
     );
-  } else load();
-  return "Loading...";
+  } else {
+    load();
+    return "Loading...";
+  }
 }

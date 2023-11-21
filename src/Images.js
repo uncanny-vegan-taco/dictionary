@@ -16,5 +16,7 @@ export default function Images(props) {
         })}
       </div>
     );
-  } else return null;
+  } else {
+    return null;
+  }
 }

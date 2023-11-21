@@ -9,18 +9,3 @@ input {
   width: 50%;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.363);
 }
-.first-color {
-  background: #283739;
-}
-
-.second-color {
-  background: #2c5d63;
-}
-
-.third-color {
-  background: #a2c11c;
-}
-
-.fourth-color {
-  background: #e0e0e0;
-}

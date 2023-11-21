@@ -8,20 +8,8 @@ footer {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 50px;
+  font-size: 65px;
 }
-.first-color {
-  background: #283739;
-}
-
-.second-color {
-  background: #2c5d63;
-}
-
-.third-color {
-  background: #a2c11c;
-}
-
-.fourth-color {
-  background: #e0e0e0;
+.container {
+  max-width: 960px;
 }

@@ -2,3 +2,9 @@ h2 {
   font-size: 45px;
   margin-top: 15px;
 }
+.title {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.363);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}

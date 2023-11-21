@@ -3,13 +3,19 @@ h3 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-p {
-  line-height: 1.5;
-  margin: 0;
+.meaning {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.363);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
 }
 .example {
+  display: block;
   font-size: 14px;
   color: #e0e0e083;
+}
+.definition {
+  font-size: 18px;
 }
 .first-color {
   background: #283739;

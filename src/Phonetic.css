@@ -1,10 +1,11 @@
 a {
   color: #a2c11c;
+  font-weight: bold;
   text-decoration: none;
   background-color: #283739;
   border-radius: 20px;
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: 14px;
   transition: 200ms ease-in-out;
   margin: 10px;
 }
@@ -14,6 +15,8 @@ a:hover {
 }
 .Phonetics {
   margin: 5px;
+  font-size: 18px;
+  line-height: 0;
 }
 .first-color {
   background: #283739;

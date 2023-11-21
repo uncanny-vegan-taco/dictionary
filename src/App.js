@@ -6,7 +6,7 @@ export default function App() {
     <div className="container">
       <div className="App">
         <h1 className="Header">Gain Some Knowledge</h1>
-        <Search />
+        <Search defaultWord="Dog" />
         <footer>Coded by Kyli White</footer>
       </div>
     </div>

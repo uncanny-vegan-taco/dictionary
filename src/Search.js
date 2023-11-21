@@ -4,9 +4,10 @@ import Results from "./Results";
 import Images from "./Images";
 import "./Search.css";
 
-export default function Search() {
-  let [word, setWord] = useState(null);
+export default function Search(props) {
+  let [word, setWord] = useState(props.defaultWord);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
   function showDefinition(response) {
     console.log(response.data);
@@ -23,6 +24,11 @@ export default function Search() {
     setPhotos(response.data.photos);
   }
 
+  function load() {
+    setLoaded(true);
+    Search();
+  }
+
   function Search() {
     let imageApiKey = "ab845e08702fbc3c99tc4fo5b8bf92c3";
     let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${word}&key=${imageApiKey}`;
@@ -30,18 +36,21 @@ export default function Search() {
     axios.get(wordapiUrl).then(showDefinition);
     axios.get(imageApiUrl).then(showImages);
   }
-
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Type a word here..."
-          onChange={updateWord}
-        />
-      </form>
-      <Results results={results} />
-      <Images photos={photos} />
-    </div>
-  );
+  if (loaded) {
+    return (
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Type a word here..."
+            onChange={updateWord}
+            default={props.defaultWord}
+          />
+        </form>
+        <Results results={results} />
+        <Images photos={photos} />
+      </div>
+    );
+  } else load();
+  return "Loading...";
 }

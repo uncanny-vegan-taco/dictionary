@@ -45,7 +45,6 @@ export default function Search(props) {
             type="search"
             placeholder="Type a word here..."
             onChange={updateWord}
-            defaultValue={props.defaultWord}
           />
         </form>
         <Results results={results} />

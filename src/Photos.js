@@ -1,7 +1,7 @@
 import React from "react";
-import "./Images.css";
+import "./Photos.css";
 
-export default function Images(props) {
+export default function Photos(props) {
   if (props.photos) {
     return (
       <div className="Images">

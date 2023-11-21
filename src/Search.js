@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-import Images from "./Images";
+import Photos from "./Photos";
 import "./Search.css";
 
 export default function Search(props) {
@@ -49,7 +49,7 @@ export default function Search(props) {
           />
         </form>
         <Results results={results} />
-        <Images photos={photos} />
+        <Photos photos={photos} />
       </div>
     );
   } else {

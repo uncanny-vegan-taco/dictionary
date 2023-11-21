@@ -1,11 +1,11 @@
 img {
   width: 100%;
-  padding: 5px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 15px;
 }
 .Images {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.363);
   padding: 20px;
   margin: 20px;
